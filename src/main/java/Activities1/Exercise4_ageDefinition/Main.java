@@ -11,18 +11,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scanner skaner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.println("Ile masz lat?");
-        int wiek = skaner.nextInt();
-        if (wiek > 18) {
+        int age = input.nextInt();
+        if (age > 18) {
             System.out.println("Jestes pelnoletni!");
         }
-        if (wiek < 1) {
+        if (age < 1) {
             System.out.println("Nie mozesz miec mniej niz 1 rok");
         }
 
-        if (wiek > 100) {
-            System.out.println("Masz " + wiek + " lat. Należy Ci się podwójna emerytura z ZUSu.");
+        if (age > 100) {
+            System.out.println("Masz " + age + " lat. Należy Ci się podwójna emerytura z ZUSu.");
         }
     }
 }
